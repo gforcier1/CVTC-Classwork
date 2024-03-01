@@ -1,0 +1,150 @@
+<!DOCTYPE html>  
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 6: Compound Assignment Operators</title>
+    <link rel="stylesheet" href="../resources/css/style.css" media="screen">
+    <link rel="stylesheet" href="../resources/css/print.css" media="print">
+    <script src="../resources/lib/jquery/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="../resources/lib/highlight/styles/default.css">
+    <script src="../resources/lib/highlight/highlight.pack.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1>Programming Fundamentals</h1>
+        <h2><a href="../index.html">Unit 4: Operators and Functions</a></h2>
+      </header>
+      
+      <main>
+  
+        <h2>Lab 6: Compound Assignment Operators</h2>
+
+        <h4>File: /labs/lab-06-compoundAssignmentOperators.html</h4>
+        
+        <h3>Student Information</h3>
+        
+        <ul>
+          <li>Name: Gunnar Forcier</li>
+        </ul>
+
+        <h3>Lab Steps</h3>
+        
+        <ol>
+          <li>Open this file in Firefox and Notepad++.</li>
+          <li>Add your name in the appropriate area above.</li>
+          <li>Add code after the line: <code>YOUR CODE STARTS AFTER THIS LINE:</code> to complete this lab.</li>
+          <li>Your output should look like the <strong>Example Output</strong> below.</li>
+          <li><strong>Variable declarations section</strong>
+            <ol>
+              <li>Write a comment that identifies this coding section.</li>
+              <li>Add the following variables:
+                <ol>
+                  <li><code>myNumber</code></li>
+                  <li><code>mySalary</code> </li>
+                  <li><code>year</code></li>
+                  <li><code>loopCounter</code></li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li><strong>Assignments section</strong>
+            <ol>
+              <li>Write a comment that identifies this coding section.</li>
+              <li>Assign the following data to the variables created in the previous section.
+                <ol>
+                  <li>myNumber --&gt; <code>200</code> </li>
+                  <li>mySalary --&gt; <code>40000.00</code> </li>
+                  <li>year --&gt; <code>2023</code> </li>
+                  <li>loopCounter --&gt; <code>0</code> </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li><strong>Calculations and Output section</strong>
+            <ol>
+              <li>Write a comment that identifies this section.</li>
+              <li>Using <span class="caps"><strong>only</strong> </span><strong>compound assignment operators</strong> perform the following operations, and output the results immediately following the operation:
+<ol>
+                  <li>display the current value of myNumber</li>
+                  <li>add <code>25</code> to myNumber</li>
+                  <li>display the current value of myNumber</li>
+                  <li>subtract <code>75</code> from myNumber</li>
+                  <li>display the current value of myNumber</li>
+                  <li>give yourself a <code>10%</code> raise (multiply your salary by <code>1.1</code>)</li>
+                  <li>display the current value of mySalary</li>
+                  <li>add 4 to<code>2023</code></li>
+                  <li>display the current value of year</li>
+                  <li>add <code>five</code> to the loopCounter</li>
+                  <li>display the current value of loopCounter</li>
+                </ol>
+              </li>
+            </ol>
+          </li>  
+        </ol>
+        
+
+        <h3>Example Output</h3>
+
+<pre class="output">
+myNumber: 200
+myNumber: 225
+myNumber: 150
+mySalary: 44000
+year: 2027
+loopCounter: 5
+</pre>
+
+        <h3>Your Output:</h3>
+
+<pre class="output">
+<script id="student_code">
+// YOUR CODE STARTS AFTER THIS LINE:
+
+//variable declarations
+
+var myNumber;
+var mySalary;
+var year;
+var loopCounter;
+
+//variable assignments
+
+myNumber = 200;
+mySalary = 40000;
+year = 2023;
+loopCounter = 0;
+
+//Calculations and Outputs
+
+document.write("myNumber: " + myNumber + "\n");
+myNumber+=25;
+document.write("myNumber: " + myNumber + "\n");
+myNumber-=75;
+document.write("myNumber: " + myNumber + "\n");
+mySalary*=1.1;
+document.write("mySalary: " + mySalary + "\n");
+year+=4;
+document.write("year: " + year + "\n");
+loopCounter+=5;
+document.write("loopCounter: " + loopCounter + "\n");
+
+// END OF YOUR CODE
+</script>
+</pre>
+
+        <h3>What You Learned</h3>
+        <p>You learned about the compound operators and how they can be more effective than the unary operators.</p>
+        
+        <p><a href="../moreOperators.html">Back</a></p>
+          
+      </main>
+      
+      <footer>
+        <p>
+          Latest version: 1.2302
+        </p>
+      </footer>
+    </section>
+  </body>  
+</html>  

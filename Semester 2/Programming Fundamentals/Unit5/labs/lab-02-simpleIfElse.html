@@ -1,0 +1,226 @@
+<!DOCTYPE html>  
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 2: Simple If/Else</title>
+    <link rel="stylesheet" href="../resources/css/style.css" media="screen">
+    <link rel="stylesheet" href="../resources/css/print.css" media="print">
+    <script src="../resources/lib/jquery/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="../resources/lib/highlight/styles/default.css">
+    <script src="../resources/lib/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1>Programming Fundamentals</h1>
+        <h2><a href="../index.html">Unit 5: Making Decisions</a></h2>
+      </header>
+      
+      <main>
+
+        <h2>Lab 2:  If/Else Algorithm</h2>
+
+        <h4>File: /labs/lab-02-simpleIfElse.html</h4>
+
+        <h3>Student Information</h3>
+
+        <ul>
+          <li>Name: Gunnar Forcier</li>
+        </ul>
+
+        <h3>Lab problem statement</h3>
+
+        <blockquote>
+        <p><strong><em>Write a program that asks a user to enter a string. Then ask the user to enter a string that will sort lower alphabetically than the first string. (What does it mean when something sorts lower or higher? Z sorts lower than A, and A sorts higher than Z.) If the second string sorts lower alphabetically than the first then output a message that includes both strings and a success message. If the second string does not sort lower than the first string then output the strings and ask the user to try again.</em></strong></p>
+        <p>Hint: Look at the <a href="../asciiChart.html">ASCII Table</a>. Remember that lower case letters will sort lower than upper-case letters too.</p>
+        <p><strong>For full points, your program should include only one output statement.</strong></p>
+        </blockquote>
+
+        <h3>Lab Steps</h3>
+
+        <ol>
+          <li>Open this file in Firefox and Notepad++.</li>
+          <li>Add your name in the appropriate area above.</li>
+          <li>Read the problem statement.</li>
+          <li>Complete the "Nouns and Verbs" section.</li>
+          <li>Complete the "Defining Diagram" section.</li>
+          <li>Complete the "Solution Algorithm" section.</li>
+          <li>Complete the "Checking the Solution Algorithm" section.</li>
+          <li>Code the JavaScript program.
+            <ol>
+              <li>Add code after the line: <code class="varname">YOUR CODE STARTS AFTER THIS LINE:</code> to complete this lab.</li>
+              <li>Your output should look like the <strong>Example Output</strong> at the bottom of this lab.</li>
+              <li>Remember to follow all coding standards and add appropriate comments!</li>
+            </ol>
+          </li>
+          <li>Remembrer to test everything!</li>
+        </ol>
+
+        <h3>1. Nouns and Verbs</h3>
+        <ul>
+          <li>Copy the above problem statement and paste it below so it appears in the black box when you refresh the page, underneath the words <code class="varname">PROBLEM STATEMENT</code>.</li>
+          <li>Identify the nouns and verbs in the problem statement and write them in the appropriate locations so they appear in the black box below when you refresh the page.</li>
+        </ul>
+
+<pre class="student pseudocode">PROBLEM STATEMENT: Write a program that asks a user to enter a string. Then ask the user to enter a string that will sort lower alphabetically than the first string. 
+(What does it mean when something sorts lower or higher? Z sorts lower than A, and A sorts higher than Z.) If the second string sorts lower alphabetically than the first then output a message 
+that includes both strings and a success message. If the second string does not sort lower than the first string then output the strings and ask the user to try again.
+
+
+Nouns: string, message, 
+
+Verbs: enter a string, enter string that will sort lower alphabetically, sort lower than first string, 
+output both strings and success, output both string and try again
+</pre>
+
+        <h3>2. Defining Diagram</h3>
+        <ul>
+          <li>Convert the nouns and verbs into variable names and processes and create a defining diagram.</li>
+          <li>Make your variable names <strong>valid JavaScript names</strong> that conform to the course JavaScript Coding Standards.</li>
+          <li>Write down the processes with very short statements, 2 or 3 words. Remember, this is not pseudocode. This is just the process.</li>
+        </ul>
+
+<pre class="student pseudocode">
+INPUTS:
+string1
+string2
+
+
+PROCESSING:
+prompt for string 1
+prompt for string 2
+if string 2 lower than string 1 output both strings and success message
+if string 2 higher than string 1 output both strings and try again message
+
+OUTPUTS:
+display both strings
+display message
+
+</pre>
+
+        <h3>3. Solution Algorithm</h3>
+        <ul>
+          <li>Create a solution algorithm (using Pseudocode) based on the defining diagram. Remember to give your algorithm a name and use proper indentation.</li>
+          <li>Ensure you include an appropriate level of detail for your input, processing, and output logic.</li>
+        </ul>
+
+<pre class="student pseudocode">
+// YOUR SOLUTION ALGORITHM GOES AFTER THIS LINE:
+
+PromptForTwoStringsAndSort
+  prompt string1
+  prompt string2
+  If string2 less than string 1
+    message is equal to success
+  Else
+    message is equal to failure
+  EndIf
+  Display string1
+  Display string2
+  Display message
+END
+
+
+</pre>
+
+        <h3>4. Checking the Solution Algorithm</h3>
+
+        <ul>
+          <li>Create a test plan for the algorithm.
+            <ul>
+              <li>Don't forget to fill in the <strong>VARIABLES</strong> section! That's easy to miss!</li>
+            </ul>
+          </li>
+          <li>Have <b>at least 3 test cases</b> that test different inputs and outputs. </li>
+        </ul>
+
+<pre class="student pseudocode">
+VARIABLES: string1, string2, message
+
+TEST CASE 1: 
+
+  INPUT VALUES: "MOVIE","movie"
+
+  EXPECTED RESULT: "MOVIE","movie", "success"
+
+  ACTUAL RESULT: Very good, "movie" sorts lower than "MOVIE".
+
+TEST CASE 2:
+
+  INPUT VALUES: "movie","MOVIE"
+
+  EXPECTED RESULT: "movie","MOVIE". "Try again"
+
+  ACTUAL RESULT: Please try again, "MOVIE" sorts higher than "movie".
+
+TEST CASE 3:
+
+  INPUT VALUES: "movie","movie"
+
+  EXPECTED RESULT: "movie","movie", "Try again"
+
+  ACTUAL RESULT: Please try again, "movie" sorts higher than "movie".
+</pre>
+
+        <h3>5. JavaScript Code</h3>
+        <ul>
+          <li>Write the JavaScript code based on everything you've done.</li>
+          <li>You will need to follow the coding standards for the course.</li>
+          <li>Once everything is working, go back and <strong>fill in</strong> the actual results sections in the test plan.</li>
+        </ul>
+        <h3>Example Output</h3>
+        <p>Your program should output  these outputs when run, depending on what you enter. You should test your program thoroughly to ensure that the logic works.</p>
+        <p>If the user uses the program correctly, he or she should see:</p>
+<pre class="output">
+Very good, &quot;fred&quot; sorts lower than &quot;Fred&quot;.
+</pre>
+
+        <p>But if they don't, then they should see:</p>
+
+<pre class="output">
+&quot;Fred&quot; sorts higher than &quot;fred&quot;, please try again.
+</pre>
+
+        <h3>Your Output:</h3>
+
+<pre class="output">
+<script id="student_code">
+// YOUR CODE STARTS AFTER THIS LINE:
+
+//Variable declaration
+var string1;
+var string2;
+
+//input VARIABLES
+
+string1 = prompt("Enter a string.");
+string2 = prompt("Enter a second string that will sort lower than the first.");
+
+//IF statement checking if string2 < string 1
+
+if (string1 < string2) {
+  document.write("Very good, \"" + string2 + "\" sorts lower than \"" + string1 + "\".");
+} else {
+  document.write("Please try again, \"" + string2 + "\" sorts higher than \"" + string1 + "\".");
+}
+
+// END OF YOUR CODE
+</script>
+</pre>
+
+        <h3>What You Learned</h3>
+        <p>You learned how to apply simple IF/ELSE statements to branch your code, taking one path or the other and changing the output of the program based on a condition.</p>
+        <p><a href="../simpleIfElse.html">Back</a></p>
+
+      </main>
+      
+      <footer>
+        <p>
+          Latest Version: 1.2303
+        </p>
+      </footer>
+
+    </section>
+  </body>
+</html>

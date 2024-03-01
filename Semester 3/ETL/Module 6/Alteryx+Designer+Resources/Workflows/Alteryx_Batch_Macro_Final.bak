@@ -1,0 +1,871 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="414" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Credit Card Fees.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Card" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Fee" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="486" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="creditcardtype" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Card" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Card" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="Double" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="Double" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="Fee" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Card" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Fee" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="582" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>creditcardtype</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-01-09 21:21:31</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Visa</Operand>
+              <StartDate>2023-01-09 21:21:31</StartDate>
+              <EndDate>2023-01-09 21:21:31</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[creditcardtype] = "Visa"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="Double" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="Fee" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="Double" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="Fee" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="purchaseprice" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="Double" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="brandid" selected="True" type="V_String" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="brandid" size="19" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="brandname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="firstbrewedyear" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="breweryname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="city" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="state" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="country" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="description" size="263" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_WString" />
+            <Field name="canesugar" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="cornsyrup" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="honey" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="artificialsweetener" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="caffeinated" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="alcoholic" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableincans" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinbottles" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinkegs" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="website" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="facebookpage" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="twitter" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="currentretailprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="198" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="rootbeerid" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="rootbeerid" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_rootbeerid" selected="False" rename="Right_rootbeerid" input="Right_" />
+                <SelectField field="Right_containertype" selected="False" input="Right_" />
+                <SelectField field="Right_locationid" selected="False" rename="Right_locationid" input="Right_" />
+                <SelectField field="Right_purchasedate" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="containertype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="purchasedate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="702" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[purchaseprice] - (([purchaseprice]*[Fee])+[wholesalecost])" field="Profit" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Profit = [purchaseprice] - (([purchaseprice]*[Fee])+[wholesalecost])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="Double" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="Fee" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\Credit Card Fees.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Profit" source="Formula: [purchaseprice] - (([purchaseprice]*[Fee])+[wholesalecost])" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="822" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="creditcardtype" action="GroupBy" rename="creditcardtype" />
+            <SummarizeField field="purchaseprice" action="Sum" rename="Revenue" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="creditcardtype" size="254" source="Summarize: GroupBy - creditcardtype" type="V_String" />
+            <Field name="Revenue" source="Summarize: Sum - purchaseprice" type="Double" />
+            <Field name="Sum_Profit" source="Summarize: Sum - Profit" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="294" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="brandid" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="brandid" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_transactionid" selected="True" input="Left_" />
+                <SelectField field="Left_creditcardnumber" selected="True" input="Left_" />
+                <SelectField field="Left_customerid" selected="True" input="Left_" />
+                <SelectField field="Left_transactiondate" selected="True" input="Left_" />
+                <SelectField field="Left_creditcardtype" selected="True" input="Left_" />
+                <SelectField field="Left_locationid" selected="True" input="Left_" />
+                <SelectField field="Left_rootbeerid" selected="True" input="Left_" />
+                <SelectField field="Left_purchaseprice" selected="True" input="Left_" />
+                <SelectField field="Left_brandid" selected="True" input="Left_" />
+                <SelectField field="Right_wholesalecost" selected="True" input="Right_" />
+                <SelectField field="Right_brandid" selected="False" rename="Right_brandid" input="Right_" />
+                <SelectField field="Right_brandname" selected="False" input="Right_" />
+                <SelectField field="Right_firstbrewedyear" selected="False" input="Right_" />
+                <SelectField field="Right_breweryname" selected="False" input="Right_" />
+                <SelectField field="Right_city" selected="False" input="Right_" />
+                <SelectField field="Right_state" selected="False" input="Right_" />
+                <SelectField field="Right_country" selected="False" input="Right_" />
+                <SelectField field="Right_description" selected="False" input="Right_" />
+                <SelectField field="Right_canesugar" selected="False" input="Right_" />
+                <SelectField field="Right_cornsyrup" selected="False" input="Right_" />
+                <SelectField field="Right_honey" selected="False" input="Right_" />
+                <SelectField field="Right_artificialsweetener" selected="False" input="Right_" />
+                <SelectField field="Right_caffeinated" selected="False" input="Right_" />
+                <SelectField field="Right_alcoholic" selected="False" input="Right_" />
+                <SelectField field="Right_availableincans" selected="False" input="Right_" />
+                <SelectField field="Right_availableinbottles" selected="False" input="Right_" />
+                <SelectField field="Right_availableinkegs" selected="False" input="Right_" />
+                <SelectField field="Right_website" selected="False" input="Right_" />
+                <SelectField field="Right_facebookpage" selected="False" input="Right_" />
+                <SelectField field="Right_twitter" selected="False" input="Right_" />
+                <SelectField field="Right_currentretailprice" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="brandid" size="19" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="brandname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="firstbrewedyear" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="breweryname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="city" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="state" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="country" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="description" size="263" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_WString" />
+            <Field name="canesugar" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="cornsyrup" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="honey" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="artificialsweetener" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="caffeinated" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="alcoholic" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableincans" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinbottles" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinkegs" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="website" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="facebookpage" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="twitter" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="currentretailprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeerbrand.xlsx
+Query=`rootbeerbrand$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="brandid" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="brandname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="firstbrewedyear" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="breweryname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="city" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="state" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="country" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="description" size="263" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_WString" />
+            <Field name="canesugar" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="cornsyrup" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="honey" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="artificialsweetener" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="caffeinated" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="alcoholic" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableincans" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinbottles" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinkegs" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="website" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="facebookpage" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="twitter" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="currentretailprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="66" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>transaction.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeer.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="containertype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="purchasedate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="918" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="366" y="42" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (15)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="594" y="66" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Join" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Action" />
+      <Destination ToolID="3" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="16" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Alteryx_Batch_Macro_Final</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9ea59c94-aeb5-45cc-9381-bacde95745a1" />
+      <Telemetry>
+        <PreviousWorkflowId value="73a0c853-9b47-4bf5-9b4b-d3a19aa1760d" />
+        <OriginWorkflowId value="e14e8259-e5bc-4ed6-806e-b02339024806" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="16" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>3/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (13)</Name>
+          <ToolId value="13" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (14)</Description>
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Choose a Card Type</Description>
+              <Name>Control Parameter (15)</Name>
+              <ToolId value="15" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (15)</Name>
+            <Description>Choose a Card Type</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="14" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

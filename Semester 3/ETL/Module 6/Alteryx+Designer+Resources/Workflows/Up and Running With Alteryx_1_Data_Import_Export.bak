@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>transaction.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\transaction.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="948" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customer.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="firstname" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="lastname" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="fullname" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="streetaddress" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="city" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="state" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="zipcode" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="email" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="phonenumber" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="firstpurchasedate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="subscribedtoemaillist" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+            <Field name="gender" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="444" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\geolocation.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>geolocation.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\geolocation.csv" type="V_String" />
+            <Field name="latitude" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\geolocation.csv" type="V_String" />
+            <Field name="longitude" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\geolocation.csv" type="V_String" />
+            <Field name="location" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\geolocation.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\location.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>location.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\location.csv" type="V_String" />
+            <Field name="locationname" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\location.csv" type="V_String" />
+            <Field name="streetaddress" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\location.csv" type="V_String" />
+            <Field name="city" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\location.csv" type="V_String" />
+            <Field name="state" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\location.csv" type="V_String" />
+            <Field name="zipcode" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\location.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeer.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rootbeerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="containertype" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+            <Field name="purchasedate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="696" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerreview.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeerreview.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="customerid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerreview.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerreview.csv" type="V_String" />
+            <Field name="starrating" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerreview.csv" type="V_String" />
+            <Field name="reviewdate" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerreview.csv" type="V_String" />
+            <Field name="review" size="254" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerreview.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customer_geocoding.xlsx
+Query=`geocoding$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="original_customerid" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="original_streetaddress" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="original_city" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="original_state" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="original_zipcode" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="lat" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="lon" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="formatted" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="housenumber" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="name" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="street" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="postcode" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="district" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="suburb" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="city" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="county" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="state" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="state_code" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="country" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="country_code" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="confidence" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="confidence_city_level" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="confidence_street_level" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="attribution" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="attribution_license" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="attribution_url" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeerbrand.xlsx
+Query=`rootbeerbrand$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="brandid" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="brandname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="firstbrewedyear" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="breweryname" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="city" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="state" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="country" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="description" size="263" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_WString" />
+            <Field name="canesugar" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="cornsyrup" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="honey" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="artificialsweetener" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="caffeinated" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="alcoholic" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableincans" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinbottles" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinkegs" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="website" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="facebookpage" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="twitter" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="currentretailprice" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="1074" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\State Names.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>State Names.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\State Names.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Abbreviation" size="255" source="File: C:\Users\dusti\Documents\Maven Local Files\Alteryx - Up &amp; Running\Datasets\Root Beer\State Names.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Up and Running With Alteryx_1_Data_Import_Export</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="b5c19c29-c94e-4c3e-aac6-d548ed0eeafa" />
+      <Telemetry>
+        <PreviousWorkflowId value="01ed290f-d26d-4178-a7e5-d3a75d337ebb" />
+        <OriginWorkflowId value="01ed290f-d26d-4178-a7e5-d3a75d337ebb" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

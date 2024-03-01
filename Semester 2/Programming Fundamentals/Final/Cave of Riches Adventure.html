@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Cave Tale</title>
+  </head>
+  <body> 
+      <header>
+        <h2>Cave of Riches</h2>
+        <h4>By: Gunnar Forcier</h4>
+      </header>  
+      <h5>Problem Statement: Create a text adventure that asks the player their name. 
+      It must also provide multiple branching paths, some that end the adventure and some 
+      that give you gold.<br>Allow for the player to go through the adventure multiple times.
+      Display the total gold collected from the adventure. </h5>
+      <pre class="pseudocode">
+      <li>Nouns and Verbs: </li>
+      Nouns: player name, branching paths, total gold, results
+      Verbs: ask, total, display
+      
+      <li>Defining Diagram: </li>
+      Inputs: 
+       Player name
+       player answers
+       
+      Processing:
+      declare and prompt for playerName
+      declare loopcounter
+      declare totalGold
+      while loopcounter is less than 2
+      declare answer variable and prompt for first choice
+      if answer equals x then add 50 to totalGold
+       else
+       if answer equals x then 
+       else
+       if answer equals x then 
+      add 1 to loopcounter
+      display playerName and totalGold
+
+      Outputs:
+      PlyaerName
+      totalGold
+      
+      
+      <li>Pseudocode: </li> 
+      createTextAdventure
+        declare playerName and prompt
+        declare totalGold
+        declare loopCounter
+        while loopcounter is less than 2
+          declare answer and prompt saying to choose left, right, and center
+          if answer is equal to left
+            answer is equal to prompt saying you follow the left path and come across a sleeping goblin and see a chest just beyond it. what do you do? kill/sneak/turn back
+              if answer is kill
+                prompt killed goblin, but awoke 10 others. game over.
+                else if answer is sneak 
+                prompt successfully snuck behind and looted the chest
+                add 50 gold to totalGold
+                else if answer is turn back
+                prompt cowardice results in death. Erupt into flames game over.                
+          else if answer is equal to right
+            answer is equal to prompt saying you encounter a goblin summoning ritual. You can fight, observe, or escape
+              if answer is fight
+                prompt you bravely stopped the ritual before they could summon more goblins. You find 100 gold in the summoning chamber.
+                add 100 gold to totalGold
+                else if answer is observe
+                prompt  you carefully observed the ritual. A grotesque amalgamation of flesh is born and consumes every inhabitant in the chamber. Including you. Game over!
+                else if answer is escape
+                prompt A voice enters your ear and screeches "COWARDICE COST ME EVERYTHING." You explode. Game over.                
+          else if answer is equal to center
+            answer is equal to prompt saying you follow the central path and come across a blue hooded woman who offers you a magical potion what do you do? drink/ignore/ask questions
+              if answer is drink
+                prompt you drank the potion and your skin begings to glow. The woman vanishes and you are left alone. Your skin quickly begins to feel fiery hot. You feel something forming underneath your skin. Your skin grows hotter and begins to boil.
+                Your boils begin to pop. You're in agony, but you notice that with every pop something round forces it's way out of your skin. Your skin boils and boils relentlessly. Pop. Pop. Pop. Pop.
+                You collapse.
+                prompt You awaken in a daze with no sign of the mysterious woman, but you're surrounded by a mountain of gold.
+                add 200 gold to totalGold
+                else if answer is ignore 
+                prompt You ignore the woman and continue on your journey. You come across an oasis with a chest containing 150 gold
+                add 100 gold to totalGold
+                else if answer is ask questions
+                prompt she deftly chops your head off. Game Over.
+          else
+            alert invalid choice
+            continue
+          end if
+          add 1 to loopcounter
+        endwhile
+        display playerName and totalGold
+        
+      <li>Test Plans: </li>
+VARIABLES: playerName, answer
+
+TEST CASE 1: 
+
+  INPUT VALUES: Gunnar, left, kill, right, fight
+
+  EXPECTED RESULT: Gunnar + 100g
+
+  ACTUAL RESULT: Gunnar + 100g
+
+TEST CASE 2: 
+
+  INPUT VALUES: Gunnar, center, drink, left, turn back
+
+  EXPECTED RESULT: Gunnar + 200g
+
+  ACTUAL RESULT: Gunnar + 200g
+
+TEST CASE 3: 
+
+  INPUT VALUES: null, right, observe, qwe, left, sneak
+
+  EXPECTED RESULT: null + 50g
+
+  ACTUAL RESULT: null + 50g
+  
+TEST CASE 4: 
+
+  INPUT VALUES: Sarah, center, ignore, right, escape
+
+  EXPECTED RESULT: Sarah + 100g
+
+  ACTUAL RESULT: Sarah + 100g
+  
+      </pre>
+        <script src="js/CaveJavaScript.js">
+        </script>
+  </body>
+
+</html>

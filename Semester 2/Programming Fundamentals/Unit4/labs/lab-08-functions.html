@@ -1,0 +1,273 @@
+<!DOCTYPE html>  
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 08: Functions</title>
+    <link rel="stylesheet" href="../resources/css/style.css" media="screen">
+    <link rel="stylesheet" href="../resources/css/print.css" media="print">
+    <script src="../resources/lib/jquery/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="../resources/lib/highlight/styles/default.css">
+    <script src="../resources/lib/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1>Programming Fundamentals</h1>
+        <h2><a href="../index.html">Unit 4: Operators and Functions</a></h2>
+      </header>
+      
+      <main>
+        <h2>Lab 08:  Functions</h2>
+        <h4>File: /labs/lab-08-functions.html</h4>
+        <h3>Student Information</h3>
+        <ul>
+          <li>Name: Gunnar Forcier</li>
+        </ul>
+        <h3>Lab Steps</h3>
+        <ul>
+          <li>Open this file in Firefox and Notepad++.</li>
+          <li>Add your name in the appropriate place.</li>
+          <li>Complete all sections of this lab in Notepad++, and test your results in Firefox. It is important to do them all in order, from 1 through 6. Follow the instructions for each section.</li>
+        </ul>
+        <h3>Problem Statement</h3>
+        <blockquote>
+          <p><em><strong>A program is needed that computes the sum, difference, product, and quotient of two numbers. Prompt the user for both numbers and compute each result. Each result should be displayed to the user on its own line.</strong></em></p>
+          <p>Create a <code class="keyword">CalculateSum</code> function, a <code class="keyword">CalculateDifference</code> function,
+              a <code class="keyword">CalculateProduct</code> function and a
+              <code class="keyword">CalculateQuotient</code> function.
+              Each function should perform its own calculation, taking in the two numbers as
+              arguments and returning the answer back to the main program.<strong> Don't forget to convert user input to numbers.</strong></p>
+        </blockquote>
+        <h3>Additional Requirements</h3>
+        <ul>
+          <li>The user inputs must be passed to the functions as arguments.</li>
+          <li>The functions must return the result and must not store the result
+            in a global variable.</li>
+          <li>The part of the program that calls the functions must store the result of those
+            functions in variables.</li>
+          <li>Your functions must not display results to the screen.  </li>
+          <li>Your functions must not prompt for input.  </li>
+          <li>Your functions must not access any variables not declared inside of the function.</li>
+          <li>You may choose to encapsulate your main program in a main function.</li>
+        </ul>
+
+        <h3>1. Nouns and Verbs</h3>
+        <ul>
+          <li>Copy the above problem statement and paste it below so it appears in the black box when you refresh the page, underneath the words <code class="varname">PROBLEM STATEMENT</code>.</li>
+          <li>Identify the nouns and verbs in the problem statement and write them in the appropriate locations so they appear in the black box below when you refresh the page.</li>
+        </ul>
+
+<pre class="pseudocode">PROBLEM STATEMENT: A program is needed that computes the sum, difference, product, and quotient of two numbers. 
+Prompt the user for both numbers and compute each result. Each result should be displayed to the user on its own line.
+
+Nouns: sum, difference, product, quotient, two numbers, result
+
+Verbs: computes, prompt, displayed
+</pre>
+
+      <h3>2. Defining Diagram</h3>
+      <ul>
+        <li>Convert the nouns and verbs into variable names and processes and create a defining diagram.</li>
+        <li>Make your variable names <strong>valid JavaScript names</strong> that conform to the course JavaScript Coding Standards.</li>
+        <li>Write down the processes with very short statements, 2 or 3 words. Remember, this is not pseudocode. This is just the process.</li>
+      </ul>
+
+<pre class="pseudocode">
+INPUTS:
+numberOne
+numberTwo
+
+PROCESSING:
+prompt numberOne
+prompt numberTwo
+calculate sum
+calculate difference
+calculate product
+calculate quotient
+display inputs
+display calculations
+
+OUTPUTS:
+display inputs
+display calculations
+
+</pre>
+
+        <h3>3. Solution Algorithm</h3>
+        <ul>
+          <li>Create a solution algorithm (using Pseudocode) based on the defining diagram. Remember to give your algorithm a name and use proper indentation.</li>
+        </ul>
+
+<pre class="pseudocode">
+SOLUTION ALGORITHM:
+
+displayInputsAndCalculations
+  prompt for numberOne
+  prompt for numberTwo
+  sum is equal to numberOne plus numberTwo
+  difference is equal to numberOne subtracted by numberTwo
+  product is equal to numberOne multiplied by numberTwo
+  quotient is equal to numberOne divided by numberTwo
+  display numberOne plus page break
+  display numberTwo plus page break
+  display sum plus page break
+  display difference plus page break
+  display product plus page break
+  display quotient plus page break
+
+
+</pre>
+
+        <h3>4. Checking the Solution Algorithm</h3>
+        <ul>
+          <li>Create a test plan for the algorithm.
+            <ul>
+              <li>Don't forget to fill in the <strong>VARIABLES</strong> section! That's easy to miss!</li>
+            </ul>
+          </li>
+          <li>Have <b>at least 3 test cases</b> that test different inputs and outputs. </li>
+        </ul>
+
+<pre class="pseudocode">
+VARIABLES: numberOne, numberTwo, Sum, Difference, Product, Quotient
+
+TEST CASE 1: 
+
+  INPUT VALUES: 5, 10
+
+  EXPECTED RESULT: 5, 10, 15, -5, 50, .5
+
+  ACTUAL RESULT: 5, 10, 15, -5, 50, .5
+
+TEST CASE 2: 
+
+  INPUT VALUES: 20, 10
+
+  EXPECTED RESULT: 20, 10, 30, 10, 200, 2
+
+  ACTUAL RESULT: 20, 10, 30, 10, 200, 2
+
+TEST CASE 3:
+
+  INPUT VALUES: 100, 50
+
+  EXPECTED RESULT: 100, 50, 150, 50, 5000, 2
+
+  ACTUAL RESULT: 100, 50, 150, 50, 5000, 2
+
+</pre>
+
+        <h3>5. JavaScript Code</h3>
+        <ul>
+          <li>Write the JavaScript code based on everything you've done.</li>
+          <li>You will need to follow the coding standards for the course.</li>
+          <li>Once everything is working, go back and <strong>fill in</strong> the actual results sections in the test plan.</li>
+        </ul>
+        <h3>Your Output:</h3>
+
+<pre class="output">
+<script id="student_code">
+// YOUR CODE STARTS AFTER THIS LINE:
+
+//creating functions for sum/difference/product/quotient
+
+function calculateSum(numberOne, numberTwo){
+  var sumResult = 0;
+  sumResult = numberOne + numberTwo;
+  return(sumResult);
+}
+
+function calculateDifference(numberOne, numberTwo){
+
+  var differenceResult = 0;
+  differenceResult = numberOne - numberTwo;
+  return(differenceResult);
+}
+
+function calculateProduct(numberOne, numberTwo){
+
+  var productResult = 0;
+  productResult = numberOne * numberTwo;
+  return(productResult);
+}
+
+function calculateQuotient(numberOne, numberTwo){
+
+  var quotientResult = 0;
+  quotientResult = numberOne / numberTwo;
+  return(quotientResult);
+}
+
+//Main function
+
+function Main(){
+
+  //variable declaration
+  var numberOne;
+  var numberOnePrint = "";
+  var numberTwo;
+  var numberTwoPrint = "";
+  var sum = 0;
+  var sumPrint = "";
+  var difference = 0;
+  var differencePrint = "";
+  var product = 0;
+  var productPrint = "";
+  var quotient = 0;
+  var quotientPrint = "";
+  
+  //user inputs and number conversion
+  numberOne = prompt("What is number one?");
+  numberOne = Number(numberOne);
+  numberTwo  = prompt("What is number two?");
+  numberTwo = Number(numberTwo);
+  
+  //calling functions
+  sum = calculateSum(numberOne, numberTwo);
+  difference = calculateDifference(numberOne, numberTwo);
+  product = calculateProduct(numberOne, numberTwo);
+  quotient = calculateQuotient(numberOne, numberTwo);
+  
+  
+  //putting results into output variables
+  numberOnePrint = "Number One is " + numberOne + ".\n";
+  numberTwoPrint = "Number Two is " + numberTwo + ".\n";
+  sumPrint = "The sum is " + sum + ".\n";
+  differencePrint = "The difference is " + difference + ".\n";
+  productPrint = "The product is " + product + ".\n";
+  quotientPrint = "The quotient is " + quotient + ".";
+  
+  
+  //outputting the output variables to screen
+  document.write(numberOnePrint);
+  document.write(numberTwoPrint);
+  document.write(sumPrint);
+  document.write(differencePrint);
+  document.write(productPrint);
+  document.write(quotientPrint);
+
+}
+
+//Calling Main function
+Main();
+
+// END OF YOUR CODE
+</script>
+</pre>
+
+        <h3>What You Did</h3>
+        <p>You just went through the full process of developing an
+          application again, this time using functions to break up
+          the code.. You found the nouns and verbs, you did a Defining Diagram, you created a solution algorithm with pseudocode, you devised a test plan, you wrote your code with documentation, and you tested your code, checking it against your testing plan.    <strong>You did remember to go back and fill in the actual results in your testing plan, right?</strong></p>
+        <p><a href="../breakingUpCodeWithFunctions.html">Back</a></p>
+      </main>
+      
+      <footer>
+        <p>
+          Latest version: 1.2302
+        </p>
+      </footer>
+    </section>
+  </body>  
+</html>  

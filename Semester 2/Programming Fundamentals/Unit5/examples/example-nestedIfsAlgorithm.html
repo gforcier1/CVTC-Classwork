@@ -1,0 +1,357 @@
+<!DOCTYPE html>  
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 5: Nested Ifs Algorithm</title>
+    <link rel="stylesheet" href="../resources/css/style.css" media="screen">
+    <link rel="stylesheet" href="../resources/css/print.css" media="print">
+    <script src="../resources/lib/jquery/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="../resources/lib/highlight/styles/default.css">
+    <script src="../resources/lib/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1>Programming Fundamentals</h1> 
+        <h2><a href="../index.html">Unit 5: Making Decisions</a></h2>
+      </header>
+      
+      <main>
+
+        <h2>Example: Nested Ifs Algorithm</h2>
+
+        <h4>File: examples/examples-nestedIfsAlgorithm.html</h4>
+
+        <h3>Lab Steps</h3>
+
+        <ol>
+          <li>Open this file in Firefox and Notepad++.</li>
+          <li>Add your name in the appropriate area above.</li>
+          <li>Read the problem statement.</li>
+          <li>Complete the "Nouns and Verbs" section.</li>
+          <li>Complete the "Defining Diagram" section.</li>
+          <li>Complete the "Solution Algorithm" section.</li>
+          <li>Complete the "Checking the Solution Algorithm" section.</li>
+          <li>Code the JavaScript program.
+            <ol>
+              <li>Add code after the line: <code class="keyword">YOUR CODE STARTS AFTER THIS LINE:</code> to complete this lab.</li>
+              <li>Your output should look like the <strong>Example Output</strong> at the bottom of the lab.</li>
+              <li>Your code should be efficient and you should avoid unnecessary repetition of code.</li>
+              <li>Remember to follow all coding standards and add appropriate comments!</li>
+            </ol>
+          </li>
+          <li><strong>Remember to test everything.</strong></li>
+        </ol>
+
+        <h3>Problem Statement</h3>
+
+        <blockquote>
+          A program is required that calculates the price of a hotel room
+          based on three factors. First, are the guests members of
+          <span class="caps">AAA</span>? Second, do they want a room with
+          a view? Third, how many will be in one room: 1-2, 3-4, or 5-6.
+          No more than six are allowed in a room. The rate is calculated
+          as follows:
+
+          <ul>
+            <li>Basic room rate is $50/night for up to 2 people, $60/night for 3-4 people, and $70/night for 5-6 people.</li>
+            <li>A room with a view costs 10% more per night.</li>
+            <li>There is a 15% discount for <span class="caps">AAA </span>members off of the total cost per night for 1-2 people, a 10% discount for 3-4 people, and a 5% for 5-6 people.</li>
+          </ul>
+
+          <p>
+            The program should prompt the user for all the inputs, perform the
+            calculations and output the <strong>total cost per night</strong>. Use nested
+            if/else to calculate the cost.
+          </p>
+          <div class="notice">
+            <p>This program involves currency. Ensure precision is appropriately managed.</p>
+          </div>
+          <p>
+            <strong>Think carefully about this problem. It is one of the most
+            complex ones we've done so far, and it will require a lot of
+            pseudocode to clearly define the algorithm. There are several
+            combinations you'll need to think about as you construct your
+            algorithm.</strong>
+          </p>
+        </blockquote>
+
+        <h3>1. Nouns and Verbs</h3>
+        <ul>
+          <li>Copy the above problem statement and paste it below so it appears in the black box when you refresh the page, underneath the words <code class="varname">PROBLEM STATEMENT</code>.</li>
+          <li>Identify the nouns and verbs in the problem statement and write them in the appropriate locations so they appear in the black box below when you refresh the page.</li>
+        </ul>
+
+<pre class="student pseudocode">PROBLEM STATEMENT:
+
+Nouns: cost per night, member of AAA, room with view, guests per room
+Verbs: prompt, perform the calculations, output
+
+</pre>
+
+
+        <h3>2. Defining Diagram</h3>
+        <ul>
+          <li>Convert the nouns and verbs into variable names and processes and create a defining diagram.</li>
+          <li>Make your variable names <strong>valid JavaScript names</strong> that conform to the course JavaScript Coding Standards.</li>
+          <li>Write down the processes with very short statements, 2 or 3 words. Remember, this is not pseudocode. This is just the process.</li>
+        </ul>
+
+<pre class="student pseudocode">
+INPUTS:
+  memberAAA
+  roomWithView
+  guestsPerRoom
+PROCESSING:
+  read memberAAA
+  read roomWithView
+  read guestsPerRoom
+  if guestsPerRoom is greater than 6 then 
+    set message to "No more than 6 people allowed in a room. Please try again."
+  else 
+    set message to costPerNight logic
+  endif
+  display message
+OUTPUTS:
+  memberAAA
+  roomWithView
+  guestsPerRoom
+  costPerNight
+  message
+</pre>
+
+        <h3>3. Solution Algorithm</h3>
+        <ul>
+          <li>Create a solution algorithm (using Pseudocode) based on the defining diagram. Remember to give your algorithm a name and use proper indentation.</li>
+          <li>Ensure you include an appropriate level of detail for your input, processing, and output logic.</li>
+        </ul>
+        <p>
+          This solution algorithm will be complex and will require many nested IF
+          statements. There are multiple ways to solve this problem. <strong>Be specific in your steps for this and think through this
+          problem carefully.</strong>
+        </p>
+
+<pre class="student pseudocode">
+//YOUR SOLUTION ALGORITHM STARTS AFTER THIS LINE:
+
+CalculateCostPerNight
+  prompt for memberAAA
+  prompt for roomWithView
+  prompt for guestsPerRoom
+  convert guestsPerRoom
+  if guestsPerRoom is greater than 6 then 
+    message = "No more than 6 people allowed in a room. Please try again."
+  else 
+    if guestsPerRoom is less than or equal to 2 then costPerNight = 50
+      if roomWithView is "yes" then costPerNight = costPerNight + (costPerNight * .10) endif
+      if memberAAA is "yes" then costPerNight = costPerNight - (costPerNight * .15) endif
+    else if guestsPerRoom is greater than 2 and less than or equal to 4 then costPerNight = 60
+      if roomWithView is "yes" then costPerNight = costPerNight + (costPerNight * .10) endif
+      if memberAAA is "yes" then costPerNight = costPerNight - (costPerNight * .10) endif
+    else if guestsPerRoom is greater than 4 and less than or equal to 6 then costPerNight = 70
+      if roomWithView is "yes" then costPerNight = costPerNight + (costPerNight * .10) endif
+      if memberAAA is "yes" then costPerNight = costPerNight - (costPerNight * .05) endif
+    endif
+    message = "Occupancy: " + guestsPerRoom + newline +
+              "Member of AAA: " + memberAAA + newline +
+              "Room with a view: " + roomWithView + newline +
+              "Your room rate is $" + costPerNight
+  endif
+  display message
+END
+</pre>
+
+        <h3>4. Checking the Solution Algorithm</h3>
+        <ul>
+          <li>Create a test plan for the algorithm.
+            <ul>
+              <li>Don't forget to fill in the <strong>VARIABLES</strong> section! That's easy to miss!</li>
+            </ul>
+          </li>
+          <li>Have <b>at least 3 test cases</b> that test different inputs and outputs. Ensure you cover bad data entry as well as the &quot;golden path.&quot; To accurately test this program design, you will need more than 3 test cases.</li>
+        </ul>
+
+<pre class="student pseudocode">
+VARIABLES:
+
+TEST CASE 1:
+
+  INPUT VALUES: 1,n,n
+
+  EXPECTED RESULT:Your room rate is $50.00
+
+  ACTUAL RESULT: Your room rate is $50.00
+
+TEST CASE 2:
+
+  INPUT VALUES: 3,y,y
+
+  EXPECTED RESULT: Your room rate is $59.40
+
+  ACTUAL RESULT: Your room rate is $59.40
+
+TEST CASE 3:
+
+  INPUT VALUES:7,n,n
+
+  EXPECTED RESULT: No more than 6 people allowed in a room. Please try again.
+
+  ACTUAL RESULT: No more than 6 people allowed in a room. Please try again.
+</pre>
+
+        <h3>5. JavaScript Code</h3>
+        <ul>
+          <li>Write the JavaScript code based on everything you've done.</li>
+          <li>You will need to follow the coding standards for the course.</li>
+          <li>Once everything is working, go back and <strong>fill in</strong> the actual results sections in the test plan.</li>
+        </ul>
+<pre><code>
+// Variable declarations
+var costPerNight;
+var guestsPerRoom;
+var memberAAA;
+var message;
+var roomWithView;
+// Variable assignments (Input)
+message = "";
+guestsPerRoom = prompt("How many people will be in your room?");
+memberAAA = prompt("Are you a member of AAA? (y or n)");
+roomWithView = prompt("Do you want a room with a view? (y or n)");
+guestsPerRoom = Number(guestsPerRoom);
+// Conditional logic (Process)
+if (guestsPerRoom > 6) {
+  message = "No more than 6 people allowed in a room. Please try again.";
+} else {
+  if (guestsPerRoom <= 2) {
+    costPerNight = 5000;
+    if (roomWithView === "y") {
+      costPerNight += (costPerNight * 0.1);
+    }
+    if (memberAAA === "y") {
+      costPerNight -= (costPerNight * 0.15);
+    }
+  } else if (guestsPerRoom > 2 && guestsPerRoom <= 4) {
+    costPerNight = 6000;
+    if (roomWithView === "y") {
+      costPerNight += (costPerNight * 0.1);
+    }
+    if (memberAAA === "y") {
+      costPerNight -= (costPerNight * 0.1);
+    }
+  } else if (guestsPerRoom > 4 && guestsPerRoom <= 6) {
+    costPerNight = 7000;
+    if (roomWithView === "y") {
+      costPerNight += (costPerNight * 0.1);
+    }
+    if (memberAAA === "y") {
+      costPerNight -= (costPerNight * 0.05);
+    }
+  }
+  costPerNight = Math.ceil(costPerNight);
+  costPerNight /= 100;
+ 
+  message = "Occupancy: " + guestsPerRoom + "\n\n" +
+            "Member of AAA: " + memberAAA + "\n\n" +
+            "Room with a view: " + roomWithView + "\n\n" +
+            "Your room rate is $" + costPerNight.toFixed(2);
+}
+// User display (Output)
+document.write(message);
+</code></pre>
+
+        <h3>Example Output</h3>
+
+<pre class="output">
+Occupancy: 1
+
+Member of AAA: n
+
+Room with a view: n
+
+Your room rate is $50.00
+</pre>
+
+
+<p>or</p>
+
+<pre class="output">
+No more than 6 people allowed in a room. Please try again.
+</pre>
+        <h3>Your Output:</h3>
+
+<pre class="output">
+<script id="student_code">
+// YOUR CODE STARTS AFTER THIS LINE:
+
+// Variable declarations
+var costPerNight;
+var guestsPerRoom;
+var memberAAA;
+var message;
+var roomWithView;
+// Variable assignments (Input)
+message = "";
+guestsPerRoom = prompt("How many people will be in your room?");
+memberAAA = prompt("Are you a member of AAA? (y or n)");
+roomWithView = prompt("Do you want a room with a view? (y or n)");
+guestsPerRoom = Number(guestsPerRoom);
+// Conditional logic (Process)
+if (guestsPerRoom > 6) {
+  message = "No more than 6 people allowed in a room. Please try again.";
+} else {
+  if (guestsPerRoom <= 2) {
+    costPerNight = 5000;
+    if (roomWithView === "y") {
+      costPerNight += (costPerNight * 0.1);
+    }
+    if (memberAAA === "y") {
+      costPerNight -= (costPerNight * 0.15);
+    }
+  } else if (guestsPerRoom > 2 && guestsPerRoom <= 4) {
+    costPerNight = 6000;
+    if (roomWithView === "y") {
+      costPerNight += (costPerNight * 0.1);
+    }
+    if (memberAAA === "y") {
+      costPerNight -= (costPerNight * 0.1);
+    }
+  } else if (guestsPerRoom > 4 && guestsPerRoom <= 6) {
+    costPerNight = 7000;
+    if (roomWithView === "y") {
+      costPerNight += (costPerNight * 0.1);
+    }
+    if (memberAAA === "y") {
+      costPerNight -= (costPerNight * 0.05);
+    }
+  }
+  costPerNight = Math.ceil(costPerNight);
+  costPerNight /= 100;
+ 
+  message = "Occupancy: " + guestsPerRoom + "\n\n" +
+            "Member of AAA: " + memberAAA + "\n\n" +
+            "Room with a view: " + roomWithView + "\n\n" +
+            "Your room rate is $" + costPerNight.toFixed(2);
+}
+// User display (Output)
+document.write(message);
+
+// END OF YOUR CODE
+</script>
+</pre>
+
+        <h3>What You Learned</h3>
+        <p>You learned how to design a program that uses nested IF statements to solve problems. This is a non-trivial program that is quite common in business software. </p>
+        <p><a href="../nestedIfs.html">Back</a></p>
+
+      </main>
+      
+      <footer>
+        <p>
+          Latest Version: 1.2303
+        </p>
+      </footer>
+
+    </section>
+  </body>
+</html>

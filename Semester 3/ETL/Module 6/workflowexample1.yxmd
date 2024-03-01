@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>transaction.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="transactionid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+            <Field name="creditcardnumber" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+            <Field name="customerid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+            <Field name="transactiondate" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+            <Field name="creditcardtype" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+            <Field name="rootbeerid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+            <Field name="purchaseprice" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\transaction.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="333" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\location.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>location.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="locationid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\location.csv" type="V_String" />
+            <Field name="locationname" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\location.csv" type="V_String" />
+            <Field name="streetaddress" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\location.csv" type="V_String" />
+            <Field name="city" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\location.csv" type="V_String" />
+            <Field name="state" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\location.csv" type="V_String" />
+            <Field name="zipcode" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\location.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeer.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeer.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="rootbeerid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeer.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeer.csv" type="V_String" />
+            <Field name="containertype" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeer.csv" type="V_String" />
+            <Field name="locationid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeer.csv" type="V_String" />
+            <Field name="purchasedate" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="471" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeerbrand.xlsx
+Query=`rootbeerbrand$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="brandid" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="brandname" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="firstbrewedyear" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="breweryname" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="city" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="state" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="country" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="description" size="263" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_WString" />
+            <Field name="canesugar" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="cornsyrup" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="honey" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="artificialsweetener" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="caffeinated" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="alcoholic" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableincans" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinbottles" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="availableinkegs" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Bool" />
+            <Field name="website" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="facebookpage" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="twitter" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="V_String" />
+            <Field name="wholesalecost" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+            <Field name="currentretailprice" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerbrand.xlsx|||`rootbeerbrand$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="540" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerreview.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rootbeerreview.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="customerid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerreview.csv" type="V_String" />
+            <Field name="brandid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerreview.csv" type="V_String" />
+            <Field name="starrating" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerreview.csv" type="V_String" />
+            <Field name="reviewdate" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerreview.csv" type="V_String" />
+            <Field name="review" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\rootbeerreview.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="609" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\State Names.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>State Names.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\State Names.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Abbreviation" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\State Names.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customer.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="customerid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="firstname" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="lastname" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="fullname" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="streetaddress" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="city" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="state" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="zipcode" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="email" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="phonenumber" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="firstpurchasedate" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="subscribedtoemaillist" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+            <Field name="gender" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customer_geocoding.xlsx
+Query=`geocoding$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="original_customerid" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="original_streetaddress" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="original_city" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="original_state" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="original_zipcode" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="lat" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="lon" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="formatted" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="housenumber" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="name" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="street" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="postcode" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="district" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="suburb" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="city" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="county" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="state" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="state_code" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="country" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="country_code" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="confidence" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="confidence_city_level" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="confidence_street_level" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="Double" />
+            <Field name="attribution" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="attribution_license" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+            <Field name="attribution_url" size="255" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\customer_geocoding.xlsx|||`geocoding$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="264" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\geolocation.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>geolocation.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="locationid" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\geolocation.csv" type="V_String" />
+            <Field name="latitude" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\geolocation.csv" type="V_String" />
+            <Field name="longitude" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\geolocation.csv" type="V_String" />
+            <Field name="location" size="254" source="File: C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\geolocation.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="4" />
+          <Fields>
+            <Field name="Card" />
+            <Field name="Fee" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Discover</c>
+              <c>0.025</c>
+            </r>
+            <r>
+              <c>Visa</c>
+              <c>0.015</c>
+            </r>
+            <r>
+              <c>MasterCard</c>
+              <c>0.02</c>
+            </r>
+            <r>
+              <c>American Express</c>
+              <c>0.035</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="414" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets</Directory>
+          <FileSpec>google*</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dir C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\google*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="546" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\google_rootbeer_2019.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>3</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ReadList</Mode>
+          <ReadList_Field>FullPath</ReadList_Field>
+          <ReadList_Type>Path</ReadList_Type>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="678" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="8">C:\Users\gunna\OneDrive\Documents\Semester 3\ETL\Alteryx+Designer+Resources\Datasets\exampleoutput.xls|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PostSQL />
+            <PreSQL />
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>exampleoutput.xls
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="222" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gunna\AppData\Local\Temp\Engine_21416_b7c217c1be324bd799d1f62bf447a9ee_\Engine_24880_051d874582e2431ab669b3772b6adf16_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints />
+            </View2>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>workflowexample1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="df52c162-a451-4d9f-9a56-9d0fb17d6134" />
+      <Telemetry>
+        <PreviousWorkflowId value="7d3f6ba1-9b8b-441c-8630-dec710de9037" />
+        <OriginWorkflowId value="7d3f6ba1-9b8b-441c-8630-dec710de9037" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

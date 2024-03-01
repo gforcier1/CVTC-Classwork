@@ -1,0 +1,1288 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="294" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>C:\Users\Public\Desktop</Directory>
+          <FileSpec>*.*</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dir C:\Users\Public\Desktop\*.*</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field name="ShortFileName" size="14" source="Directory:" type="V_WString" />
+            <Field name="CreationTime" source="Directory:" type="DateTime" />
+            <Field name="LastAccessTime" source="Directory:" type="DateTime" />
+            <Field name="LastWriteTime" source="Directory:" type="DateTime" />
+            <Field name="Size" source="Directory:" type="Int64" />
+            <Field name="AttributeArchive" source="Directory:" type="Bool" />
+            <Field name="AttributeCompressed" source="Directory:" type="Bool" />
+            <Field name="AttributeEncrypted" source="Directory:" type="Bool" />
+            <Field name="AttributeHidden" source="Directory:" type="Bool" />
+            <Field name="AttributeNormal" source="Directory:" type="Bool" />
+            <Field name="AttributeOffline" source="Directory:" type="Bool" />
+            <Field name="AttributeReadonly" source="Directory:" type="Bool" />
+            <Field name="AttributeReparsePoint" source="Directory:" type="Bool" />
+            <Field name="AttributeSparseFile" source="Directory:" type="Bool" />
+            <Field name="AttributeSystem" source="Directory:" type="Bool" />
+            <Field name="AttributeTemporary" source="Directory:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="294" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Destination" />
+          </Fields>
+          <Data>
+            <r>
+              <c>C:\Users\Public\Desktop\NewCopied</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Destination" size="33" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="294" y="654" width="132" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Note: The backslash at the end of the Destination is very important. ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FolderBrowse.FolderBrowse">
+        <Position x="54" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Folder Browse (19)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="162" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FolderBrowse.FolderBrowse">
+        <Position x="54" y="426" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Folder Browse (21)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="162" y="534" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="750" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>FileName</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-03-31 13:07:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>acc</Operand>
+              <StartDate>2022-03-31 13:07:52</StartDate>
+              <EndDate>2022-03-31 13:07:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([FileName],"acc")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field name="ShortFileName" size="14" source="Directory:" type="V_WString" />
+            <Field name="CreationTime" source="Directory:" type="DateTime" />
+            <Field name="LastAccessTime" source="Directory:" type="DateTime" />
+            <Field name="LastWriteTime" source="Directory:" type="DateTime" />
+            <Field name="Size" source="Directory:" type="Int64" />
+            <Field name="AttributeArchive" source="Directory:" type="Bool" />
+            <Field name="AttributeCompressed" source="Directory:" type="Bool" />
+            <Field name="AttributeEncrypted" source="Directory:" type="Bool" />
+            <Field name="AttributeHidden" source="Directory:" type="Bool" />
+            <Field name="AttributeNormal" source="Directory:" type="Bool" />
+            <Field name="AttributeOffline" source="Directory:" type="Bool" />
+            <Field name="AttributeReadonly" source="Directory:" type="Bool" />
+            <Field name="AttributeReparsePoint" source="Directory:" type="Bool" />
+            <Field name="AttributeSparseFile" source="Directory:" type="Bool" />
+            <Field name="AttributeSystem" source="Directory:" type="Bool" />
+            <Field name="AttributeTemporary" source="Directory:" type="Bool" />
+            <Field name="FileExtension" size="64" source="Formula: FileGetExt([FileName])" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field name="ShortFileName" size="14" source="Directory:" type="V_WString" />
+            <Field name="CreationTime" source="Directory:" type="DateTime" />
+            <Field name="LastAccessTime" source="Directory:" type="DateTime" />
+            <Field name="LastWriteTime" source="Directory:" type="DateTime" />
+            <Field name="Size" source="Directory:" type="Int64" />
+            <Field name="AttributeArchive" source="Directory:" type="Bool" />
+            <Field name="AttributeCompressed" source="Directory:" type="Bool" />
+            <Field name="AttributeEncrypted" source="Directory:" type="Bool" />
+            <Field name="AttributeHidden" source="Directory:" type="Bool" />
+            <Field name="AttributeNormal" source="Directory:" type="Bool" />
+            <Field name="AttributeOffline" source="Directory:" type="Bool" />
+            <Field name="AttributeReadonly" source="Directory:" type="Bool" />
+            <Field name="AttributeReparsePoint" source="Directory:" type="Bool" />
+            <Field name="AttributeSparseFile" source="Directory:" type="Bool" />
+            <Field name="AttributeSystem" source="Directory:" type="Bool" />
+            <Field name="AttributeTemporary" source="Directory:" type="Bool" />
+            <Field name="FileExtension" size="64" source="Formula: FileGetExt([FileName])" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="978" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_FullPath" selected="True" input="Target_" />
+                <SelectField field="Target_Directory" selected="True" input="Target_" />
+                <SelectField field="Target_FileName" selected="True" input="Target_" />
+                <SelectField field="Source_Destination" selected="True" input="Source_" />
+                <SelectField field="Source_FullPath" selected="False" rename="Source_FullPath" input="Source_" />
+                <SelectField field="Source_Directory" selected="False" rename="Source_Directory" input="Source_" />
+                <SelectField field="Source_FileName" selected="False" rename="Source_FileName" input="Source_" />
+                <SelectField field="Source_ShortFileName" selected="False" rename="Source_ShortFileName" input="Source_" />
+                <SelectField field="Source_CreationTime" selected="False" rename="Source_CreationTime" input="Source_" />
+                <SelectField field="Source_LastAccessTime" selected="False" rename="Source_LastAccessTime" input="Source_" />
+                <SelectField field="Source_LastWriteTime" selected="False" rename="Source_LastWriteTime" input="Source_" />
+                <SelectField field="Source_Size" selected="False" rename="Source_Size" input="Source_" />
+                <SelectField field="Source_AttributeArchive" selected="False" rename="Source_AttributeArchive" input="Source_" />
+                <SelectField field="Source_AttributeCompressed" selected="False" rename="Source_AttributeCompressed" input="Source_" />
+                <SelectField field="Source_AttributeEncrypted" selected="False" rename="Source_AttributeEncrypted" input="Source_" />
+                <SelectField field="Source_AttributeHidden" selected="False" rename="Source_AttributeHidden" input="Source_" />
+                <SelectField field="Source_AttributeNormal" selected="False" rename="Source_AttributeNormal" input="Source_" />
+                <SelectField field="Source_AttributeOffline" selected="False" rename="Source_AttributeOffline" input="Source_" />
+                <SelectField field="Source_AttributeReadonly" selected="False" rename="Source_AttributeReadonly" input="Source_" />
+                <SelectField field="Source_AttributeReparsePoint" selected="False" rename="Source_AttributeReparsePoint" input="Source_" />
+                <SelectField field="Source_AttributeSparseFile" selected="False" rename="Source_AttributeSparseFile" input="Source_" />
+                <SelectField field="Source_AttributeSystem" selected="False" rename="Source_AttributeSystem" input="Source_" />
+                <SelectField field="Source_AttributeTemporary" selected="False" rename="Source_AttributeTemporary" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Destination" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1086" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'copy' +' &quot;' + [FullPath] + '&quot;' + ' &quot;' + [Destination] + '&quot;'" field="cmd" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[cmd = 'copy' +' "' + [FullPath] + '"' + ' "' + [Destination] + '"'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Destination" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="cmd" size="1073741823" source="Formula: 'copy' +' &quot;' + [FullPath] + '&quot;' + ' &quot;' + [Destination] + '&quot;'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RunCommand.RunCommand">
+        <Position x="1434" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputConfiguration>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">%temp%\MoveFiles.bat</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>\0</Delimeter>
+                <ForceQuotes>Never</ForceQuotes>
+                <HeaderRow>False</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+          </OutputConfiguration>
+          <InputConfiguration>
+            <Configuration />
+          </InputConfiguration>
+          <ProgramName>%temp%\MoveFiles.bat</ProgramName>
+          <Arguments />
+          <WorkingDir />
+          <RunMinimized value="False" />
+          <RunSilent value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run MoveFiles.bat</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunCommand" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1206" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="cmd" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cmd" size="1073741823" source="Formula: 'copy' +' &quot;' + [FullPath] + '&quot;' + ' &quot;' + [Destination] + '&quot;'" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="558" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Text Box (23)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="702" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1206" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="cmd" />
+          </Fields>
+          <Data>
+            <r>
+              <c>echo hi</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cmd" size="7" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1326" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cmd" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="522" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;mkdir &quot; + [Destination]" field="cmd" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[cmd = "mkdir " + [Destination]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Destination" size="33" source="TextInput:" type="String" />
+            <Field name="cmd" size="1073741823" source="Formula: &quot;mkdir &quot; + [Destination]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RunCommand.RunCommand">
+        <Position x="882" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputConfiguration>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">%temp%\CreateFolder.bat</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>\0</Delimeter>
+                <ForceQuotes>Never</ForceQuotes>
+                <HeaderRow>False</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+          </OutputConfiguration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">%temp%\log.txt</File>
+              <FormatSpecificOptions>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\0</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <ProgramName>%temp%\CreateFolder.bat</ProgramName>
+          <Arguments>&gt; %temp%\log.txt 2&gt;&amp;1</Arguments>
+          <WorkingDir />
+          <RunMinimized value="True" />
+          <RunSilent value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Run CreateFolder.bat</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\Allwyn\AppData\Local\AlteryxTemp\Engine_4184_8ec18f41d5604099ad665df4c86f0cf5_\log.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunCommand" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="606" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="cmd" />
+          </Fields>
+          <Data>
+            <r>
+              <c>echo hi</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cmd" size="7" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="774" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cmd" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Destination" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="cmd" size="1073741823" source="Formula: &quot;mkdir &quot; + [Destination]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1578" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Allwyn\AppData\Local\AlteryxTemp\Engine_4184_8ec18f41d5604099ad665df4c86f0cf5_\Engine_2776_a9bb942fcdd34f9286dc140883282219_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="990" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Field_1</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-07-04 20:31:03</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2022-07-04 20:31:03</StartDate>
+              <EndDate>2022-07-04 20:31:03</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Field_1])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\Allwyn\AppData\Local\AlteryxTemp\Engine_4184_8ec18f41d5604099ad665df4c86f0cf5_\log.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\Allwyn\AppData\Local\AlteryxTemp\Engine_4184_8ec18f41d5604099ad665df4c86f0cf5_\log.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1086" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\Allwyn\AppData\Local\AlteryxTemp\Engine_4184_8ec18f41d5604099ad665df4c86f0cf5_\log.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1254" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field_1</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value="|" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: Trim(Replace([Field_1], &quot;mkdir&quot;, &quot;|&quot;),&quot;&quot;)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="1" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="2" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1170" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Trim(Replace([Field_1], &quot;mkdir&quot;, &quot;|&quot;),&quot;&quot;)" field="Field_1" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Field_1 = Trim(Replace([Field_1], "mkdir", "|"),"")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: Trim(Replace([Field_1], &quot;mkdir&quot;, &quot;|&quot;),&quot;&quot;)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1446" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="1" selected="False" />
+            <SelectField field="2" selected="True" rename="Destination" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_1" name="Destination" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings>
+        <Position x="1350" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Field_1","1","2"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="1" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="2" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="546" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>FileExtension</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-07-05 16:00:15</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2022-07-05 16:00:15</StartDate>
+              <EndDate>2022-07-05 16:00:15</EndDate>
+              <Operand>pdf</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([FileExtension],"pdf")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field name="ShortFileName" size="14" source="Directory:" type="V_WString" />
+            <Field name="CreationTime" source="Directory:" type="DateTime" />
+            <Field name="LastAccessTime" source="Directory:" type="DateTime" />
+            <Field name="LastWriteTime" source="Directory:" type="DateTime" />
+            <Field name="Size" source="Directory:" type="Int64" />
+            <Field name="AttributeArchive" source="Directory:" type="Bool" />
+            <Field name="AttributeCompressed" source="Directory:" type="Bool" />
+            <Field name="AttributeEncrypted" source="Directory:" type="Bool" />
+            <Field name="AttributeHidden" source="Directory:" type="Bool" />
+            <Field name="AttributeNormal" source="Directory:" type="Bool" />
+            <Field name="AttributeOffline" source="Directory:" type="Bool" />
+            <Field name="AttributeReadonly" source="Directory:" type="Bool" />
+            <Field name="AttributeReparsePoint" source="Directory:" type="Bool" />
+            <Field name="AttributeSparseFile" source="Directory:" type="Bool" />
+            <Field name="AttributeSystem" source="Directory:" type="Bool" />
+            <Field name="AttributeTemporary" source="Directory:" type="Bool" />
+            <Field name="FileExtension" size="64" source="Formula: FileGetExt([FileName])" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field name="ShortFileName" size="14" source="Directory:" type="V_WString" />
+            <Field name="CreationTime" source="Directory:" type="DateTime" />
+            <Field name="LastAccessTime" source="Directory:" type="DateTime" />
+            <Field name="LastWriteTime" source="Directory:" type="DateTime" />
+            <Field name="Size" source="Directory:" type="Int64" />
+            <Field name="AttributeArchive" source="Directory:" type="Bool" />
+            <Field name="AttributeCompressed" source="Directory:" type="Bool" />
+            <Field name="AttributeEncrypted" source="Directory:" type="Bool" />
+            <Field name="AttributeHidden" source="Directory:" type="Bool" />
+            <Field name="AttributeNormal" source="Directory:" type="Bool" />
+            <Field name="AttributeOffline" source="Directory:" type="Bool" />
+            <Field name="AttributeReadonly" source="Directory:" type="Bool" />
+            <Field name="AttributeReparsePoint" source="Directory:" type="Bool" />
+            <Field name="AttributeSparseFile" source="Directory:" type="Bool" />
+            <Field name="AttributeSystem" source="Directory:" type="Bool" />
+            <Field name="AttributeTemporary" source="Directory:" type="Bool" />
+            <Field name="FileExtension" size="64" source="Formula: FileGetExt([FileName])" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="426" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FileGetExt([FileName])" field="FileExtension" size="64" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[FileExtension = FileGetExt([FileName])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FullPath" size="32767" source="Directory:" type="V_WString" />
+            <Field name="Directory" size="32767" source="Directory:" type="V_WString" />
+            <Field name="FileName" size="260" source="Directory:" type="V_WString" />
+            <Field name="ShortFileName" size="14" source="Directory:" type="V_WString" />
+            <Field name="CreationTime" source="Directory:" type="DateTime" />
+            <Field name="LastAccessTime" source="Directory:" type="DateTime" />
+            <Field name="LastWriteTime" source="Directory:" type="DateTime" />
+            <Field name="Size" source="Directory:" type="Int64" />
+            <Field name="AttributeArchive" source="Directory:" type="Bool" />
+            <Field name="AttributeCompressed" source="Directory:" type="Bool" />
+            <Field name="AttributeEncrypted" source="Directory:" type="Bool" />
+            <Field name="AttributeHidden" source="Directory:" type="Bool" />
+            <Field name="AttributeNormal" source="Directory:" type="Bool" />
+            <Field name="AttributeOffline" source="Directory:" type="Bool" />
+            <Field name="AttributeReadonly" source="Directory:" type="Bool" />
+            <Field name="AttributeReparsePoint" source="Directory:" type="Bool" />
+            <Field name="AttributeSparseFile" source="Directory:" type="Bool" />
+            <Field name="AttributeSystem" source="Directory:" type="Bool" />
+            <Field name="AttributeTemporary" source="Directory:" type="Bool" />
+            <Field name="FileExtension" size="64" source="Formula: FileGetExt([FileName])" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="330" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Text Box (77)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="390" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Question" />
+      <Destination ToolID="20" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="20" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Question" />
+      <Destination ToolID="22" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="22" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="True" />
+      <Destination ToolID="51" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="51" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="55" Connection="Question" />
+      <Destination ToolID="56" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="56" Connection="Action" />
+      <Destination ToolID="50" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="True" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="True" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="74" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output26" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="78" Connection="Action" />
+      <Destination ToolID="75" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="77" Connection="Question" />
+      <Destination ToolID="78" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Folder Browse (19)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Folder Browse (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (55)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (77)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Alteryx Application - Copy Files From 1 Folder To Another - Allwyn Thomas</Name>
+      <Description>This Application Will Copy Your Files From Source Folder to Destination Folder Based on Pattern Matching.
+
+App Maker - Allwyn Thomas</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="637cf2b3-76bd-438a-9594-30e0e84c350f" />
+      <Telemetry>
+        <PreviousWorkflowId value="30aef705-fd22-4812-afe9-806480e72ee2" />
+        <OriginWorkflowId value="43ec90a6-e62f-4939-93c6-6ae18dfce951" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="20" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>1/Directory</Destination>
+              <Mapping>Update Directory with Folder Browse</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="22" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>8/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="56" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>50/Simple/Operands/Operand</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="78" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>75/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (17)</Name>
+          <ToolId value="17" />
+          <Questions>
+            <Question>
+              <Type>FolderBrowse</Type>
+              <Description>Select Source Folder</Description>
+              <Name>Folder Browse (19)</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>FolderBrowse</Type>
+              <Description>Select Destination Folder / Create New Folder</Description>
+              <Name>Folder Browse (21)</Name>
+              <ToolId value="21" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter Part of Text For Pattern Matching (Keep Blank If You Want To Copy All Files From The Source Folder)</Description>
+              <Name>Text Box (55)</Name>
+              <ToolId value="55" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter File Type/File Extension (Ex. pdf / xlsx etc) (Keep Blank If You Want To Copy All Files From The Source Folder)</Description>
+              <Name>Text Box (77)</Name>
+              <ToolId value="77" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="68" Selected="False" />
+        <Tool ToolId="74" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
